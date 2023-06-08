@@ -1,0 +1,107 @@
+﻿<Window x:Class="Shadow_Bootstrapper.Windows.Bootstrapper"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Shadow_Bootstrapper.Windows"
+        mc:Ignorable="d"
+        Title="Bootstrapper" Loaded="OnLoad" AllowsTransparency="True" Background="Transparent" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize" Topmost="True" Height="350" Width="270">
+    <Grid x:Name="MainGrid" ClipToBounds="True">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="2,1" StartPoint="0.5,0.1" Opacity=".9">
+                <GradientStop Color="#FF202020" Offset="0"/>
+                <GradientStop Color="#FF505050" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.Effect>
+            <DropShadowEffect ShadowDepth="0" Color="#FF02B4FD"/>
+        </Grid.Effect>
+        <Border x:Name="Border3" BorderBrush="Black" BorderThickness="0" Height="45" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Margin="121,64,-20,0">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0.2">
+                    <GradientStop Color="#AA202020" Offset="0"/>
+                    <GradientStop Color="#FF02B4FD" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Border.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="10.818"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Border.RenderTransform>
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="30" Color="#02B4FD" ShadowDepth="0"/>
+            </Border.Effect>
+            <Grid/>
+        </Border>
+        <Border x:Name="Border2" BorderBrush="Black" BorderThickness="0" Height="62" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Margin="-15,38,57,0">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0.2">
+                    <GradientStop Color="#AA202020" Offset="0"/>
+                    <GradientStop Color="#FF02B4FD" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Border.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-11.177"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Border.RenderTransform>
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="30" Color="#02B4FD" ShadowDepth="0"/>
+            </Border.Effect>
+            <Grid/>
+        </Border>
+        <Border x:Name="Border1" BorderBrush="Black" BorderThickness="0" Height="90" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Margin="-5,-15,-5,0">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0.2">
+                    <GradientStop Color="#AA202020" Offset="0"/>
+                    <GradientStop Color="#FF02B4FD" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Border.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="3.369"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Border.RenderTransform>
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="30" Color="#02B4FD" ShadowDepth="0"/>
+            </Border.Effect>
+            <Grid/>
+        </Border>
+        <Label x:Name="TitleLabel" Content="Shadow" FontSize="20" Foreground="White" Margin="66,3,123,308" RenderTransformOrigin="0.5,0.5" FontFamily="Segoe UI Light">
+
+        </Label>
+        <Image x:Name="SmallLogo" Margin="0,0,200,281" Opacity="0.6" RenderOptions.BitmapScalingMode="HighQuality" Source="/Pictures/shadow_80x80.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.Effect>
+                <DropShadowEffect ShadowDepth="0" BlurRadius="20"/>
+            </Image.Effect>
+        </Image>
+        <Label x:Name="SloganLogo" Content="Simple but Amazing" FontSize="12" Foreground="White" Margin="66,32,85,279" RenderTransformOrigin="0.5,0.5" FontFamily="Segoe UI Semibold"/>
+        <Label x:Name="CopyrightLabel" Content="© Shadow Cheats 2021" FontSize="10" Foreground="#999999" Margin="-1,305,141,18" RenderTransformOrigin="0.5,0.5" FontFamily="Segoe UI Semibold"/>
+        <Label x:Name="DownloadLabel" Content="Downloading Files..." FontSize="20" Foreground="White" Margin="0,270,45,41" RenderTransformOrigin="0.5,0.5" FontFamily="Segoe UI Light"/>
+        <Image x:Name="BigLogo" Margin="20,85,25,45" Opacity=".1" RenderOptions.BitmapScalingMode="HighQuality" Source="/Pictures/shadow.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.Effect>
+                <DropShadowEffect ShadowDepth="0" BlurRadius="20"/>
+            </Image.Effect>
+        </Image>
+        <ProgressBar x:Name="ProgressBar" Height="14" Background="Transparent" Value="0" BorderThickness="0" VerticalAlignment="Bottom">
+            <ProgressBar.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0.2">
+                    <GradientStop Color="#3302B4FD" Offset="0"/>
+                    <GradientStop Color="#FF02B4FD" Offset="1"/>
+                </LinearGradientBrush>
+            </ProgressBar.Foreground>
+            <ProgressBar.Effect>
+                <DropShadowEffect ShadowDepth="0" Color="#FF02B4FD" BlurRadius="40"/>
+            </ProgressBar.Effect>
+        </ProgressBar>
+    </Grid>
+</Window>

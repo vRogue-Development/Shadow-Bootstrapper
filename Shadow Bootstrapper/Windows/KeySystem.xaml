@@ -1,0 +1,128 @@
+﻿<Window x:Class="Shadow_Bootstrapper.Windows.KeySystem"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Shadow_Bootstrapper.Windows"
+        mc:Ignorable="d"
+        Title="KeySystem" Loaded="OnLoad" AllowsTransparency="True" Background="Transparent" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize" Topmost="True" Height="350" Width="270">
+    <Grid x:Name="MainGrid" ClipToBounds="True">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="2,1" StartPoint="0.5,0.1" Opacity=".9">
+                <GradientStop Color="#FF202020" Offset="0"/>
+                <GradientStop Color="#FF505050" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.Effect>
+            <DropShadowEffect ShadowDepth="0" Color="#FF02B4FD"/>
+        </Grid.Effect>
+        <Border x:Name="Border3" BorderBrush="Black" BorderThickness="0" Height="45" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Margin="121,64,-20,0">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0.2">
+                    <GradientStop Color="#AA202020" Offset="0"/>
+                    <GradientStop Color="#FF02B4FD" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Border.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="10.818"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Border.RenderTransform>
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="30" Color="#02B4FD" ShadowDepth="0"/>
+            </Border.Effect>
+            <Grid/>
+        </Border>
+        <Border x:Name="Border2" BorderBrush="Black" BorderThickness="0" Height="62" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Margin="-15,38,57,0">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0.2">
+                    <GradientStop Color="#AA202020" Offset="0"/>
+                    <GradientStop Color="#FF02B4FD" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Border.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-11.177"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Border.RenderTransform>
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="30" Color="#02B4FD" ShadowDepth="0"/>
+            </Border.Effect>
+            <Grid/>
+        </Border>
+        <Border x:Name="Border1" MouseLeftButtonDown="MouseDownHandler" BorderBrush="Black" BorderThickness="0" Height="90" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Margin="-5,-15,-5,0">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0.2">
+                    <GradientStop Color="#AA202020" Offset="0"/>
+                    <GradientStop Color="#FF02B4FD" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Border.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="3.369"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Border.RenderTransform>
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="30" Color="#02B4FD" ShadowDepth="0"/>
+            </Border.Effect>
+            <Grid/>
+        </Border>
+        <Label x:Name="TitleLabel" Content="Shadow" FontSize="20" Foreground="White" Margin="66,3,123,308" RenderTransformOrigin="0.5,0.5" FontFamily="Segoe UI Light">
+
+        </Label>
+        <Image x:Name="BigLogo" Margin="20,90,25,40" Opacity=".1" RenderOptions.BitmapScalingMode="HighQuality" Source="/Pictures/shadow.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.Effect>
+                <DropShadowEffect ShadowDepth="0" BlurRadius="30"/>
+            </Image.Effect>
+        </Image>
+        <Label x:Name="SloganLogo" Content="Simple but Amazing" FontSize="12" Foreground="White" Margin="66,32,85,279" RenderTransformOrigin="0.5,0.5" FontFamily="Segoe UI Semibold"/>
+        <Label x:Name="CopyrightLabel" Content="© Shadow Cheats 2021" FontSize="10" Foreground="#999999" Margin="-1,329,141,-6" RenderTransformOrigin="0.5,0.5" FontFamily="Segoe UI Semibold"/>
+        <Grid x:Name="ChildrenGrid" Margin="0,129,0,26">
+            <Button x:Name="Enter" Click="ButtonHandler" Content="Enter" HorizontalContentAlignment="Center" FontSize="12" VerticalContentAlignment="Center" Foreground="White" Background="#aa303030" BorderBrush="#02B4FD" Margin="25,0,25,59" Height="25" VerticalAlignment="Bottom">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="3"/>
+                    </Style>
+                </Button.Resources>
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="0" Color="#02B4FD" BlurRadius="10"/>
+                </Button.Effect>
+            </Button>
+            <Label x:Name="UsernameLabel" Content="Authentication Key:" FontSize="12" Foreground="#999999" Margin="25,5,135,165" RenderTransformOrigin="0.5,0.5" FontFamily="Segoe UI Light"/>
+            <TextBox x:Name="UsernameBox" Height="23" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#AA303030" BorderBrush="#AA02B4FD" Foreground="White" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="25,30,25,0">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="3"/>
+                    </Style>
+                </TextBox.Resources>
+                <TextBox.Effect>
+                    <DropShadowEffect ShadowDepth="0" Color="#02B4FD" BlurRadius="10"/>
+                </TextBox.Effect>
+            </TextBox>
+            <Button x:Name="GetKey" Click="ButtonHandler" Content="Retrieve Key" HorizontalContentAlignment="Center" FontSize="12" VerticalContentAlignment="Center" Foreground="White" Background="#aa303030" BorderBrush="#02B4FD" Margin="25,0,25,100" Height="25" VerticalAlignment="Bottom">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="3"/>
+                    </Style>
+                </Button.Resources>
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="0" Color="#02B4FD" BlurRadius="10"/>
+                </Button.Effect>
+            </Button>
+        </Grid>
+        <Image x:Name="SmallLogo" Opacity="0.6" Margin="0,0,200,281" RenderOptions.BitmapScalingMode="HighQuality" Source="/Shadow Bootstrapper;component/Pictures/shadow_80x80.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.Effect>
+                <DropShadowEffect ShadowDepth="0" BlurRadius="20"/>
+            </Image.Effect>
+        </Image>
+    </Grid>
+</Window>
