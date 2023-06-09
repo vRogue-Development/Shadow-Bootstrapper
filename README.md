@@ -1,4 +1,4 @@
-We release tons of resources, including source files like "Shadow UI" in our <a href="https://discord.gg/v4ZTG26h4j" target="_blank">Discord Server</a>, so be sure to check us out.
+We release tons of resources, including source files like "Shadow Bootstrapper" in our <a href="https://discord.gg/v4ZTG26h4j" target="_blank">Discord Server</a>, so be sure to check us out.
 
 ## Story behind the Shadow Bootstrapper.
 
